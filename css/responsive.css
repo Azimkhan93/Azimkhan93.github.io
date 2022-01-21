@@ -55,6 +55,13 @@
 	.h1 {
 		font-size: 64px;
 	}
+
+
+	body {
+		min-height: 500px;
+	}
+
+
 	nav {
 		margin-left: 32px;
 		margin-right: 32px;
