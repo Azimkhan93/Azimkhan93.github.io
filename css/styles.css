@@ -25,7 +25,7 @@ body {
 	width: 100%;
 	background-color: #F7F7F7;
 	font-family: Montserrat, sans-serif;
-	
+	overflow: hidden;
 }
 
 .h1 {
@@ -41,7 +41,7 @@ body {
 }
 
 nav {
-	margin-top: 32px;
+	margin-top: 16px;
 }
 
 .top-bar {
@@ -76,13 +76,13 @@ nav {
 
 
 .main-text {
-	margin-top: 75px;
+	margin-top: 45px;
 	text-align: center;
-	margin-bottom: 161px;
+	margin-bottom: 110px;
 }
 
 .main-text p {
-	margin-top: 21px;
+	margin-top: 18px;
 }
 
 .yellow {
@@ -115,6 +115,11 @@ nav {
 	width: 138px;
 	height: 52px;
 	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.footer a:link, .footer a:visited, .footer a:hover, .footer a:active {
+	text-decoration: none;
 }
 
 .portfolio {
