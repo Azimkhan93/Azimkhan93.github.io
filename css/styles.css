@@ -11,12 +11,30 @@
 }
 
 :root {
-	overflow: hidden;
+	--min-height: 700px;
+	--min-height-mobile: 500px;
 }
+
 
 * {
 	padding: 0;
 	margin: 0;
+}
+
+#preloader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #F7F7F7;
+}
+
+#preloader img{
+	transform: scale(1.5);
 }
 
 html {
@@ -24,28 +42,34 @@ html {
 }
 
 body {
-	min-height: 700px;
+	min-height: var(--min-height);
 	height: 100vh;
 	width: 100%;
 	background-color: #F7F7F7;
 	font-family: Montserrat, sans-serif;
-	overflow: hidden;
+	position: relative;
+	padding-bottom: 100px;
+	box-sizing: border-box;
+}
+
+.container {
+	box-sizing: border-box;
 }
 
 .h1 {
-	font-size: 84px;
+	font-size: 132px;
 	line-height: 100%;
 	transform: scaleY(0.9);
 }
 
 .md-fz {
-	font-size: 16px;
+	font-size: 24px;
 	font-weight: 500;
-	line-height: 22.5px;
+	line-height: 125%;
 }
 
 nav {
-	margin-top: 16px;
+	margin-top: 48px;
 }
 
 .top-bar {
@@ -60,8 +84,7 @@ nav {
 
 .image-mlvch {
 	text-align: center;
-	transform: scale(0.9);
-	margin-left: 30px;
+	transform: scale(1.4);
 }
 
 .select-lang {
@@ -80,13 +103,13 @@ nav {
 
 
 .main-text {
-	margin-top: 45px;
+	margin-top: 90px;
 	text-align: center;
-	margin-bottom: 110px;
+	margin-bottom: 200px;
 }
 
 .main-text p {
-	margin-top: 18px;
+	margin-top: 28px;
 }
 
 .yellow {
@@ -109,14 +132,16 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: baseline;
-	margin-bottom: 98px;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
 }
 
 .button {
 	padding: 16px 24px;
 	color: white;
 	background: #000000;
-	width: 138px;
 	height: 52px;
 	box-sizing: border-box;
 	text-decoration: none;
@@ -130,3 +155,4 @@ nav {
 	margin-left: 24px;
 	color: #C3421A;
 }
+
