@@ -133,7 +133,7 @@ nav {
 	justify-content: center;
 	align-items: baseline;
 	position: absolute;
-	bottom: 20px;
+	bottom: 30px;
 	left: 0;
 	right: 0;
 }
@@ -145,6 +145,7 @@ nav {
 	height: 52px;
 	box-sizing: border-box;
 	text-decoration: none;
+	text-align: center;
 }
 
 .footer a:link, .footer a:visited, .footer a:hover, .footer a:active {
