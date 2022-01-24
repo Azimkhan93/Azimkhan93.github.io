@@ -81,10 +81,13 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
+
+
 	.h1 {
 		font-size: 72px;
 	}
 	
+
 }
 	/**/
 	
@@ -95,11 +98,11 @@
 		font-size: 64px;
 	}
 
-
 	body {
 		min-height: 500px;
 		padding-left: 32px;
 		padding-right: 32px;
+		padding-bottom: 190px;
 	}
 
 	.main-text {
@@ -121,6 +124,10 @@
 
  .portfolio {
 	margin-left: 18px;
+}
+
+.footer {
+	bottom: 110px;
 }
 
 }
