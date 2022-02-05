@@ -19,22 +19,22 @@
 <body>
 
 
-	<section class="modalka">
+	<div class="modalka">
 		<div class="modalka-box">
 			<h4 class="h4">Вы квалифицированы <span class="next-row">на школу лидеров!</span></h4>
 			<button class="button">Закрыть</button>
 		</div>
-	</section>
+	</div>
 	
-	<section id="lang-choice" class="lang-choice" >
+	<div id="lang-choice" class="lang-choice" >
 		<div class="lang-box">
 			<h4 class="h4">Выберите язык трансляции</h4>
 			<div class="lang-buttons">
-				<button class="button active">Русский</button>
-				<button class="button">O'zbekcha</button>
+				<button class="button button-lang active">Русский</button>
+				<button class="button button-lang">O'zbekcha</button>
 			</div>
 		</div>
-	</section>
+	</div>
 	
 	<div id="preloader">
 		<img src="src/images/herbalife.svg" alt="herbalife">
@@ -77,9 +77,9 @@
 								<input type="text" name="user-id" id="id-line" class="h5" placeholder="Введите ID пользователя">
 								<div class="viewers-box"> 
 									<p class="h5"> Кол-во человек с вами смотрит:</p>
-									<div class="viewers">124</div>
+									<input type="number" class="viewers"></>
 								</div>
-								<button class="button">Войти</button>
+								<a href="broadcast.html"><button class="button">Войти</button></a>
 							</form>
 							<div class="reg">
 								<p>* - Зарегистрируйся для участия в розыгрыше</p>
@@ -94,45 +94,62 @@
     <section class="program">
 			<div class="container">
 				<div class="row">
-					<div class="offset-2 col-8">
+					<div class="offset-1 col-10 offset-md-2 col-md-8">
 						<h2 class="h2 header-green meeting-program">ПРОГРАММА ВСТРЕЧИ</h2>
 						<div class="buttons">
-							<button class="button button-date active">11 февраля 2022</button>
-							<button class="button button-date">12 февраля 2022</button>
-							<button class="button button-date">13 февраля 2022</button>
+							<button data-table="table-date-11" class="button button-date active">11 февраля 2022</button>
+							<button data-table="table-date-12" class="button button-date">12 февраля 2022</button>
+							<button data-table="table-date-13" class="button button-date">13 февраля 2022</button>
 						</div>
-						<table class="table-schedule">
-							<tr>
-								<td class="time h5">09:45<div class="time-point row-one"></div></td>
-								<td class="event-first h5">Открытие трансляции</td>
-								<td class="spokesman h5">Максим Никитин</td>
-							</tr>
-							<tr>
-								<td class="time h5">11:00-13:00<div class="time-point row-two"></div></td>
-								<td class="event h5">Встреча TAB Team</td>
-								<td class="spokesman h5">Сара Паркер</td>
-							</tr>
-							<tr>
-								<td class="time h5">13:00-14:00<div class="time-point row-three"></div></td>
-								<td class="event h5">Перерыв</td>
-								<td class="spokesman h5">–</td>
-							</tr>
-							<tr>
-								<td class="time h5">13:30<div class="time-point row-four"></div></td>
-								<td class="event h5">Открытие трансляции</td>
-								<td class="spokesman h5">Стивен Джонсон</td>
-							</tr>
-							<tr>
-								<td class="time h5">14:00-16:30<div class="time-point row-five"></div></td>
-								<td class="event h5">Школа World Team</td>
-								<td class="spokesman h5">Эмили Уайт</td>
-							</tr>
-						</table>
+						<div class="table-wrap">
+							<table id="table-date-11" class="table-schedule active">
+								<tr>
+									<td class="time h5">09:45<div class="time-point"></div></td>
+									<td class="event-first h5">Открытие трансляции</td>
+									<td class="spokesman h5">Максим Никитин</td>
+								</tr>
+								<tr>
+									<td class="time h5">11:00-13:00<div class="time-point"></div></td>
+									<td class="event h5">Встреча TAB Team</td>
+									<td class="spokesman h5">Сара Паркер</td>
+								</tr>
+								<tr>
+									<td class="time h5">13:00-14:00<div class="time-point"></div></td>
+									<td class="event h5">Перерыв</td>
+									<td class="spokesman h5">–</td>
+								</tr>
+								<tr>
+									<td class="time h5">13:30<div class="time-point"></div></td>
+									<td class="event h5">Открытие трансляции</td>
+									<td class="spokesman h5">Стивен Джонсон</td>
+								</tr>
+								<tr>
+									<td class="time h5">14:00-16:30<div class="time-point"></div></td>
+									<td class="event h5">Школа World Team</td>
+									<td class="spokesman h5">Эмили Уайт</td>
+								</tr>
+							</table>
 
+							<table id="table-date-12" class="table-schedule active">
+								<tr>
+									<td class="time h5">09:45<div class="time-point"></div></td>
+									<td class="event-first h5">Открытие трансляции</td>
+									<td class="spokesman h5">Максим Никитин</td>
+								</tr>
+							</table>
+					
+							<table id="table-date-13" class="table-schedule active">
+								<tr>
+									<td class="time h5">09:45<div class="time-point"></div></td>
+									<td class="event-first h5">Открытие трансляции</td>
+									<td class="spokesman h5">Максим Никитин</td>
+								</tr>
+							</table>
 
 						</div>
 					</div>
 				</div>
+			</div>
 
 
     </section>
