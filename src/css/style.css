@@ -28,14 +28,19 @@
 	transform: scale(0.4);
 }
 
+*{
+	box-sizing: border-box;
+	/* border:1px solid red; box-sizing:border-box; */
+}
 
 body {
 	/* background-color: cadetblue; */
 	font-family: 'Montserrat', sans-serif;
 	font-weight: normal;
-	background-image: url("../images/background.svg");
+	background-image: url("../images/background1.svg");
 	background-size: 100%;
 	background-repeat: repeat-y;
+	
 }
 
 
@@ -66,12 +71,9 @@ body {
 
 /* Modalka */
 
-.modalka {
-	margin-bottom: 20px;
-	display: none;
-}
+
 .modalka-box {
-	width: 384px;
+	width: 100%;
 	height: 210px;
 	padding: 32px;
 	box-sizing: border-box;
@@ -89,9 +91,8 @@ body {
 }
  
 .modalka-box .button {
-	padding: 24px 130px;
-	width: 320px;
-	height: 64px;
+	padding: 24px 30px;
+	width: 100%;
 	box-sizing: border-box;
 	color: #A9A9A9;
 	background-color: rgba(255, 255, 255, 0);
@@ -100,7 +101,7 @@ body {
 }
 
 /* Language choice */
-#lang-choice{
+#lang-choice, .modalka {
 	display: block;
 	position: fixed;
 	top: 10%;
@@ -108,6 +109,10 @@ body {
   left: calc(50% - var(--lang-width)/2);
 	z-index: 5;
 	
+}
+
+.modalka {
+	display: none;
 }
 
 #lang-choice.active{
@@ -136,17 +141,20 @@ body {
 
 .lang-buttons {
 	display: flex;
-	width: 287px;
+	justify-content: space-around;
+	width: 100%;
+	position: absolute;
+	bottom: 20px;
+	padding: 0 20px;
+	left: 0;
 } 
 
 .lang-box .button {
-	margin-left: 16px;
 	padding: 16px 24px;
 	box-sizing: border-box;
 	color: #78BE20;
 	background-color: rgba(255, 255, 255, 1);
 	border: 1px solid #78BE20;
-	margin-top: 24px;
 }
 
 .lang-box .button.active {
@@ -419,6 +427,7 @@ td {
 	left: 0;
 	right: 0;
 	padding: 16px 78px;
+	min-width: 70%;
 	max-width: 100%;
 	background-color: #FFFFFF;
 	border-radius: 20px;
@@ -622,5 +631,17 @@ img.account {
 
 .videostream {
 	width: var(--video-width);
-	height: calc((var(--video-width))/1.91);
+	height: calc((var(--video-width))/1.91); 
+}
+
+.backdrop {
+	position: fixed;
+	background: rgba(0, 0, 0, .6);
+	width:100vw;
+	height: 100vh;
+	z-index: 2;
+	left: 0;
+	right:0;
+	top:0;
+	bottom: 0;
 }

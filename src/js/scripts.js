@@ -1,8 +1,12 @@
 $(function() {
 	$('#preloader').fadeOut(500);
-
+	
 	$('.button-lang').on('click', function(event) {
 		chooselanguage();
+	})
+	
+	$('#qualify-button').on('click', function(event) {
+		qualify();
 	})
 
 	$('.button-date').on('click', function(event){
@@ -12,10 +16,16 @@ $(function() {
 		const tableId = $(this).data("table")
 		$(`#${tableId}`).addClass('active')
 	})
-	
-	function chooselanguage() {
-		$('#lang-choice').fadeOut(500);
-	};
 })
 
+
+function qualify() {
+	$('#modalka').fadeOut(500);
+	$('.backdrop').fadeOut(500)	
+}
+
+function chooselanguage() {
+	$('#lang-choice').fadeOut(500);
+	$('.backdrop').fadeOut(500)	
+};
 
